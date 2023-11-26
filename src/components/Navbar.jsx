@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav 
-    className={`${styles.paddingX} w-full flex items-center py-5 top-0 z-20 bg-primar`}>
+    className={`${styles.paddingX} w-full flex items-center py-5 top-0 z-20 bg-primary`}>
       <div className={`w-full flex justify-between items-center max-w-7xl mx-auto`}> 
         <Link
           to="/"
@@ -26,7 +26,7 @@ const Navbar = () => {
           <p className={'text-white text-[18px] font-bold cursor-pointer'}>Moad <span className='sm:block hidden'></span> | Elhanbout</p>
 
         </Link>
-        <ul clasName="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((Link) => (
             <li
             key={Link.id}
@@ -49,8 +49,7 @@ const Navbar = () => {
             />
           <div>
 <div className={`${
-  toggle ? 'flex' : 'hidden'
-} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+  toggle ? 'flex' : 'hidden'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
 >
   <ul className="list-none flex justify-end items-start flex-col gap-4">
     {navLinks.map((Link) => (
